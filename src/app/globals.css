@@ -1,26 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@tailwind utilities;
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --font-inria: "Inria Serif", serif;
+  --font-fira: "Fira Sans", sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html {
+  scroll-behavior: smooth;
+}
+/* Estilo principal do AboutUs */
+.about-us-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem;
+  flex-direction: row;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Responsividade para celulares */
+@media (max-width: 768px) {
+  .social-container img {
+    display: none;
+  }
+
+  html {
+      scroll-behavior: smooth;
+    }
+
+
+  .about-us-container h1 {
+    font-size: 1.8rem; /* Tamanho do título menor em celular */
+    padding: 0.5rem;
+    
+  }
+
+  .about-us-container h2 {
+    font-size: 2rem; /* Subtítulo menor em celular */
+    margin-top: 0.5rem;
+  }
+
+  .about-us-container p {
+    font-size: 1rem; /* Texto menor em celular */
+    max-width: 90vw; /* Ocupa quase toda a largura da tela no celular */
+  }
+
+  .about-us-container img {
+    width: 150px; /* Imagem menor em celular */
+    height: auto;
+    display: none;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+
+/* Estilos para dispositivos menores que 768px (geralmente tablets e celulares) */
+@media (max-width: 640px) {
+  html {
+      scroll-behavior: smooth;
+    }
+.testimonials-container {
+    max-width: 70%;
+  }
+  nav {
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  nav a{
+      font-size: 0.85rem;
+      margin-bottm: 1rem;
+     
+      
+  }
+
+  nav button {
+   margin-left: 2px;
+   
+  }
+
+  
+
+  header {
+    
+    h2 {
+      
+      max-width: 80%;
+    }
+  }
+
+  header h1 {
+    font-size: 2.35rem;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  header h2 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  header p {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    max-width: 70%;
+  }
+
+  
+  .image {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .button {
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-bottom: 1rem;
+  }
+
+  
 }
+
+
+/* Media Query para tablets (min-width: 641px e max-width: 1024px) */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .testimonials-container {
+    max-width: 50%;
+  }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  header h1 {
+    font-size: 2rem;
+    
+  }
+
+  header h2 {
+    font-size: 1rem;
+    max-width: 50%;
+  }
+
+  .image {
+    width: 90%;
+  }
+
+  .button {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+}
+.about-us-container img {
+    width: 150px; /* Imagem menor em celular */
+    height: auto;
+    display: none;
+  }
+
+/* Media Query para telas grandes (desktops) */
