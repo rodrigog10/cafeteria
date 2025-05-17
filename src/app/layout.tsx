@@ -1,5 +1,5 @@
 // app/layout.tsx
-import Footer from "./components/footer";
+
 import "./globals.css";
 export const metadata = {
   title: "DrinkAnCoffee",
@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="pt" className={`antialiased scroll-smooth overflow-auto`}>
       <body>{children}
-        <Footer/>
+        
       </body>
     </html>
   );

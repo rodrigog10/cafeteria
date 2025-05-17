@@ -5,7 +5,7 @@ export default function Social() {
   return (
     <div 
     id="socials"
-    className="social-container my-[6rem] bg-[#3f5b40] relative mx-auto max-w-[72rem] flex items-center gap-6 p-8 shadow-2xl shadow-black">
+    className="social-container my-[8rem] bg-[#3f5b40] relative mx-auto flex items-center  gap-6 p-8 shadow-2xl shadow-black">
       <Image
         src="/cafes.jpg"
         alt="cafesvapo"

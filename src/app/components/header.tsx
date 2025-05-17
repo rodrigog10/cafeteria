@@ -13,7 +13,7 @@ export default function Header() {
         src="/leaf2.png"
         alt="plantasla"
         className="
-    hidden sm:block 
+     bottom-0 w-[100px] 
     absolute 
     lg:bottom-0 lg:left-0
     md:bottom-0 md:left-0 
@@ -28,12 +28,14 @@ export default function Header() {
         src="/flower.png"
         alt="flower"
         className="
-    hidden sm:block 
+    
     absolute 
+    xs:bottom-[-2rem] xs:left-[10px]
     xl:bottom-[-5rem] xl:right-[2rem] 
     lg:bottom-[-6rem] lg:left-[7rem] 
     md:bottom-[-6rem] md:left-[2rem] 
     sm:bottom-[-3rem] sm:left-[2rem]
+    bottom-[-3rem] w-[100px] left-[1rem]
     sm:w-[150px] md:w-[200px] lg:w-[250px] xl:w-[250px]"
         width={300}
         height={300}
@@ -41,21 +43,20 @@ export default function Header() {
         quality={100}
       />
       <Image
-        src="/graos.png"
-        alt="cafetop"
-        className="
-    hidden sm:block 
+  src="/graos.png"
+  alt="cafetop"
+  className="
     absolute 
-    xl:bottom-[-5rem] xl:right-[2rem] 
-    lg:bottom-[-5rem] lg:right-[1rem] 
-    md:bottom-[-5rem] md:right-[-1rem] 
-    sm:bottom-[-4rem] sm:right-[-1rem]
-    sm:w-[250px] md:w-[300px] lg:w-[370px] xl:w-[400px]"
-        width={400}
-        height={400}
-        quality={100}
-        priority
-      />
+    bottom-[-2rem] right-[-1rem]
+    w-[130px] sm:w-[250px] md:w-[250px] lg:w-[350px] xl:w-[350px] 2xl:w-[350px]
+    max-w-full
+  "
+  width={600}
+  height={600}
+  quality={100}
+  priority
+/>
+
 
       <div className="flex flex-col items-center mt-[2rem]  justify-center text-center text-amber-100  relative ">
         <h2 className="text-5xl font-fira drop-shadow-[0_0_0.05rem_#000000] text-amber-100 ">
@@ -75,7 +76,7 @@ export default function Header() {
           />
         </h2>
 
-        <h1 className="text-7xl mt-4 font-fira bg-gradient-to-r drop-shadow-[0_0_0.1rem_#000000] from-black to-amber-950 text-transparent bg-clip-text leading-tight">
+        <h1 className="text-7xl mt-4 font-fira bg-gradient-to-r drop-shadow-[0_0_0.1rem_#000000] from-black to-amber-900 text-transparent bg-clip-text leading-tight">
           DrinkAnCoffee.
         </h1>
 
@@ -94,7 +95,7 @@ export default function Header() {
               .getElementById("socials")
               ?.scrollIntoView({ behavior: "smooth" })
           }
-          className="bg-amber-500 text-white font-semibold px-6 py-3 rounded-tl-xl mt-5 rounded-br-xl shadow-lg hover:bg-amber-600 transition duration-300 ease-in-out cursor-pointer"
+          className="bg-amber-500 text-white font-semibold px-6 py-3 rounded-tl-xl mt-5 mb-5 rounded-br-xl shadow-lg hover:bg-amber-600 transition duration-300 ease-in-out cursor-pointer"
         >
           CONHEÇA
         </button>

@@ -43,7 +43,7 @@ export default function Products() {
   return (
     <div 
     id="products"
-    className="flex flex-wrap gap-[4rem]  font-inria text-items-center justify-center text-center text-black relative">
+    className="flex flex-wrap gap-[4rem] my-[2rem] font-inria text-items-center justify-center text-center text-black relative">
       {products.map((product) => {
         // Renderizando estrelas
         const fullStars = Math.floor(product.stars);

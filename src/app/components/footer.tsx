@@ -4,7 +4,7 @@ import { SiGmail } from "react-icons/si";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-[#2a3f2c] via-[#3f5b40] to-[#1d2a1e]  py-5 w-full relative mt-[8rem]">
+    <footer className="bg-gradient-to-r from-[#2a3f2c] via-[#3f5b40] to-[#1d2a1e]  py-5 w-full relative mt-[3rem]">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between gap-6">
         {/* Texto "Desenvolvido por" - agora perfeitamente centralizado */}
         <div className="flex items-center gap-2">

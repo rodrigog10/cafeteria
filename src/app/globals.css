@@ -8,6 +8,19 @@
   --font-fira: "Fira Sans", sans-serif;
 }
 
+@media (min-width: 1024px) {
+  .social-container {
+    max-width: 1200px; /* Defina o valor desejado */
+
+    
+      }
+
+      header p {
+        max-width: 50%;
+      }
+
+
+}
 html {
   scroll-behavior: smooth;
 }
@@ -29,14 +42,12 @@ html {
   }
 
   html {
-      scroll-behavior: smooth;
-    }
-
+    scroll-behavior: smooth;
+  }
 
   .about-us-container h1 {
     font-size: 1.8rem; /* Tamanho do título menor em celular */
     padding: 0.5rem;
-    
   }
 
   .about-us-container h2 {
@@ -56,13 +67,30 @@ html {
   }
 }
 
-
 /* Estilos para dispositivos menores que 768px (geralmente tablets e celulares) */
 @media (max-width: 640px) {
   html {
-      scroll-behavior: smooth;
-    }
-.testimonials-container {
+    scroll-behavior: smooth;
+  }
+
+  .social-container {
+    display: flex;
+    max-width: 90%;
+  }
+
+  .social-container h1 {
+    font-size: 2.25rem;
+  }
+  .social-container p {
+    font-size: 1rem;
+  }
+
+  .testimonials-container {
+    max-width: 80%;
+   
+    
+  }
+  .testimonials-container p {
     max-width: 70%;
   }
   nav {
@@ -70,24 +98,17 @@ html {
     flex-wrap: wrap;
   }
 
-  nav a{
-      font-size: 0.85rem;
-      margin-bottm: 1rem;
-     
-      
+  nav a {
+    font-size: 0.85rem;
+    margin-bottm: 1rem;
   }
 
   nav button {
-   margin-left: 2px;
-   
+    
   }
 
-  
-
   header {
-    
     h2 {
-      
       max-width: 80%;
     }
   }
@@ -103,7 +124,7 @@ html {
     margin-top: 1.5rem;
     margin-bottom: 1rem;
   }
-  
+
   header p {
     font-size: 0.85rem;
     margin-bottom: 1rem;
@@ -111,7 +132,6 @@ html {
     max-width: 70%;
   }
 
-  
   .image {
     width: 80%;
     margin: 0 auto;
@@ -122,27 +142,45 @@ html {
     font-size: 14px;
     margin-bottom: 1rem;
   }
-
-  
 }
-
 
 /* Media Query para tablets (min-width: 641px e max-width: 1024px) */
 @media (min-width: 641px) and (max-width: 1024px) {
   .testimonials-container {
-    max-width: 50%;
+    max-width: 60%;
+  }
+  .testimonials-container p {
+    max-width: 70%;
+   
   }
 
-    html {
-      scroll-behavior: smooth;
-    }
+  .social-container h1 {
+    font-size: 2.25rem;
+  }
+  .social-container p {
+    font-size: 1rem;
+    max-width: 70%;
+  }
+  .social-container {
+    display: flex;
+    max-width: 90%;
+  }
+  .social-container img {
+    display: none;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
   header h1 {
-    font-size: 2rem;
-    
+    font-size: 3.5rem;
   }
 
   header h2 {
-    font-size: 1rem;
+    font-size: 2rem;
+    max-width: 40%;
+  }
+  header p {
     max-width: 50%;
   }
 
@@ -156,9 +194,9 @@ html {
   }
 }
 .about-us-container img {
-    width: 150px; /* Imagem menor em celular */
-    height: auto;
-    display: none;
-  }
+  width: 150px; /* Imagem menor em celular */
+  height: auto;
+  display: none;
+}
 
 /* Media Query para telas grandes (desktops) */

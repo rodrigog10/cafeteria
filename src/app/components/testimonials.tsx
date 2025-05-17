@@ -13,7 +13,6 @@ const testimonials = [
     role: "Cliente desde 2017.",
     image: client1,
   },
-
 ];
 
 export default function Testimonials() {
@@ -31,15 +30,16 @@ export default function Testimonials() {
 
   return (
     <section>
-      <div 
-      id="testimonials"
-      className="testimonials-container container mx-auto">
-        <h1 className="bg-gradient-to-r my-[2rem]  font-fira text-4xl from-black via-[#3a553c] to-[#6ea072] bg-clip-text text-transparent text-center ">
+      <div
+        id="testimonials"
+        className="testimonials-container container mx-auto">
+      
+        <h1 className="bg-gradient-to-r font-fira text-4xl from-black via-[#3a553c] to-[#6ea072] bg-clip-text text-transparent text-center ">
           Depoimentos:
         </h1>
-        <div className="relative max-w-3xl mx-auto select-none">
+        <div className="relative max-w-3xl mx-auto my-[1rem] mb-[6rem] select-none">
           <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex ">
+            <div className="flex">
               {testimonials.map((item, index) => (
                 <div key={index} className="flex-[0_0_100%] min-w-0 px-3">
                   <article className="bg-[#3a553c]  text-white p-6 space-y-4 h-full flex flex-col">
@@ -54,11 +54,15 @@ export default function Testimonials() {
                         />
                       </div>
 
-                      <p className="text-amber-100 font-inria max-w-2xl">{item.content}</p>
+                      <p className="text-amber-100 font-inria max-w-[450px]">
+                        {item.content}
+                      </p>
 
-                      <div>
+                      <div className="flex flex-col items-center">
                         <p className="font-fira">{item.author}</p>
-                        <p className="text-sm text-neutral-400 font-fira">{item.role}</p>
+                        <p className="text-sm text-neutral-400 font-fira">
+                          {item.role}
+                        </p>
                       </div>
                     </div>
                   </article>
